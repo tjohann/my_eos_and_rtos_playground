@@ -23,9 +23,7 @@ clean::
 	for dir in $(MODULES); do (cd $$dir/ && $(MAKE) $@); done
 
 distclean: clean
-	rm -rf can-utils
 	rm -rf jailhouse
-	rm -rf linux-lin
 
 update_all::
 	for dir in $(MODULES); do (cd $$dir && git pull); done

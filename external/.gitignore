@@ -1,0 +1,6 @@
+# ignore jailhouse and co
+jailhouse
+*.tgz
+*.gz
+*.bz2
+*.xz
