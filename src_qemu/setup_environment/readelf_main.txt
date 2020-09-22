@@ -1,0 +1,69 @@
+ELF Header:
+  Magic:   7f 45 4c 46 01 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF32
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              EXEC (Executable file)
+  Machine:                           ARM
+  Version:                           0x1
+  Entry point address:               0x10000
+  Start of program headers:          52 (bytes into file)
+  Start of section headers:          65856 (bytes into file)
+  Flags:                             0x5000200, Version5 EABI, soft-float ABI
+  Size of this header:               52 (bytes)
+  Size of program headers:           32 (bytes)
+  Number of program headers:         1
+  Size of section headers:           40 (bytes)
+  Number of section headers:         6
+  Section header string table index: 5
+
+Section Headers:
+  [Nr] Name              Type            Addr     Off    Size   ES Flg Lk Inf Al
+  [ 0]                   NULL            00000000 000000 000000 00      0   0  0
+  [ 1] .text             PROGBITS        00010000 010000 000020 00  AX  0   0  4
+  [ 2] .ARM.attributes   ARM_ATTRIBUTES  00000000 010020 000012 00      0   0  1
+  [ 3] .symtab           SYMTAB          00000000 010034 0000b0 10      4   9  4
+  [ 4] .strtab           STRTAB          00000000 0100e4 00002a 00      0   0  1
+  [ 5] .shstrtab         STRTAB          00000000 01010e 000031 00      0   0  1
+Key to Flags:
+  W (write), A (alloc), X (execute), M (merge), S (strings), I (info),
+  L (link order), O (extra OS processing required), G (group), T (TLS),
+  C (compressed), x (unknown), o (OS specific), E (exclude),
+  y (purecode), p (processor specific)
+
+There are no section groups in this file.
+
+Program Headers:
+  Type           Offset   VirtAddr   PhysAddr   FileSiz MemSiz  Flg Align
+  LOAD           0x010000 0x00010000 0x00010000 0x00020 0x00020 R E 0x10000
+
+ Section to Segment mapping:
+  Segment Sections...
+   00     .text 
+
+There is no dynamic section in this file.
+
+There are no relocations in this file.
+
+There are no unwind sections in this file.
+
+Symbol table '.symtab' contains 11 entries:
+   Num:    Value  Size Type    Bind   Vis      Ndx Name
+     0: 00000000     0 NOTYPE  LOCAL  DEFAULT  UND 
+     1: 00010000     0 SECTION LOCAL  DEFAULT    1 
+     2: 00000000     0 SECTION LOCAL  DEFAULT    2 
+     3: 00000000     0 FILE    LOCAL  DEFAULT  ABS main.o
+     4: 00010000     0 NOTYPE  LOCAL  DEFAULT    1 $a
+     5: 00010018     0 NOTYPE  LOCAL  DEFAULT    1 output
+     6: 00010014     0 NOTYPE  LOCAL  DEFAULT    1 stop
+     7: 00010018     0 NOTYPE  LOCAL  DEFAULT    1 $d
+     8: 0001001c     0 NOTYPE  LOCAL  DEFAULT    1 $d
+     9: 00011020     0 NOTYPE  GLOBAL DEFAULT    1 stack_top
+    10: 00010000     0 NOTYPE  GLOBAL DEFAULT    1 start
+
+No version information found in this file.
+Attribute Section: aeabi
+File Attributes
+  Tag_ARM_ISA_use: Yes

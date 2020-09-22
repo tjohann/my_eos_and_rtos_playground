@@ -2,5 +2,8 @@
 # some news ... see also TODO for hints
 #
 
+2020-09-22 -> setup qemu environment with simple first example
+	      some reorg of codebase
+
 2018-02-25 -> add first example skeletons
 	      some smaller fixes

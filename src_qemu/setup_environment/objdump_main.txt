@@ -1,0 +1,19 @@
+
+main.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00010000 <start>:
+   10000:	e3a00001 	mov	r0, #1
+   10004:	e3a01029 	mov	r1, #41	; 0x29
+   10008:	e0800001 	add	r0, r0, r1
+   1000c:	e59f2008 	ldr	r2, [pc, #8]	; 1001c <output+0x4>
+   10010:	e5820000 	str	r0, [r2]
+
+00010014 <stop>:
+   10014:	eafffffe 	b	10014 <stop>
+
+00010018 <output>:
+   10018:	00000000 	.word	0x00000000
+   1001c:	00010018 	.word	0x00010018

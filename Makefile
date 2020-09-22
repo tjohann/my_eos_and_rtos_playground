@@ -3,7 +3,7 @@
 #
 
 MODULES = $(shell ls -d */ | cut -f1 -d'/')
-BUILD =
+BUILD = src_qemu src_jailhouse
 
 all::
 	@echo "  +----------------------------------------------------------+"
@@ -12,7 +12,7 @@ all::
 	@echo "| Usage:                                                   | |"
 	@echo "| make build     -> build everthing                        | |"
 	@echo "|                                                          | |"
-	@echo "| make get_jailhouse      -> clone jailhouse hypervisor    | |"
+	@echo "| make get_jailhouse -> clone jailhouse hypervisor         | |"
 	@echo "|                                                          | |"
 	@echo "| make clean     -> clean all dir/subdirs                  | +"
 	@echo "| make distclean -> complete cleanup                       |/ "
